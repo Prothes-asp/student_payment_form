@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Payment Form</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Atomic+Age&family=Concert+One&family=Croissant+One&family=Kenia&family=Lobster&display=swap" rel="stylesheet">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center" id="dataForm">
+                    <img src="./img/favicon.png" alt="Payment" height="40">
+                    Payment Form
+                    <img src="./img/favicon.png" alt="Payment" height="40">
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container register px-3 pb-3">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <a href="https://www.facebook.com/Prothesbarai" target="_blank">
+                    <img src="./img/Prothes.png" alt="" class="img-fluid rounded-circle">
+                </a>
+                <h3>Welcome</h3>
+                <p>You are 59 seconds away from earning your own money!</p>
+                <p><i class="fa-solid fa-person-chalkboard fa-fade fa-sm" style="color: #ffffff;"></i> Instructor at <a href="https://wsbacademy.business.site/" target="_blank">WSB Academy</a>: <a href="https://www.facebook.com/Prothesbarai" target="_blank">Developer Prothes</a></p>
+                <a href="" target="_blank"><button class="btn">Visit Website</button></a>
+                
+            </div>
+            <div class="col-md-9 register-right">
+                <ul class="nav nav-pills justify-content-center mt-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button type="button" class="nav-link active" id="student1-tab" data-bs-toggle="pill" href="#student1" role="tab" aria-controls="student1" aria-selected="true">S1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button type="button" class="nav-link" id="student2-tab" data-bs-toggle="pill" href="#student2" role="tab" aria-controls="student2" aria-selected="false">S2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button type="button" class="nav-link" id="student3-tab" data-bs-toggle="pill" href="#student3" role="tab" aria-controls="student3" aria-selected="false">S3</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button type="button" class="nav-link" id="student4-tab" data-bs-toggle="pill" href="#student4" role="tab" aria-controls="student4" aria-selected="false">S4</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button type="button" class="nav-link" id="student5-tab" data-bs-toggle="pill" href="#student5" role="tab" aria-controls="student5" aria-selected="false">S5</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+
+                    <!-- Student No 1 Start Here -->
+                    <div class="tab-pane fade show active" id="student1" role="tabpanel" aria-labelledby="student1-tab">
+                        <h3 class="register-heading">Student No 1</h3>
+                        <form action="https://formspree.io/f/mgejpqya" method="POST" class="needs-validation" novalidate>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name" name="Name" id="name" required>
+                                    </div>
+                                    <div class="form-group d-flex my-3">
+                                        <select name="c_code" id="ccode" class="form-control w-25">
+                                            <option value="+880">+880</option>
+                                            <option value="+91">+91</option>
+                                            <option value="+62">+62</option>
+                                            <option value="+99">+99</option>
+                                        </select>
+                                        <input type="number" class="form-control ms-2" placeholder="Your Phnone" name="Phone-No" minlength="0" min="0" maxlength="10" max="9999999999" id="phnNo" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="Payment" id="payment" class="form-select" required>
+                                            <option value="" class="hidden" selected disabled>Select Payment</option>
+                                            <option value="15000">15000</option>
+                                            <option value="12000">12000</option>
+                                            <option value="10000">10000</option>
+                                            <option value="8000">8000</option>
+                                            <option value="6000">6000</option>
+                                            <option value="4000">4000</option>
+                                            <option value="2000">2000</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <select class="form-select" name="Catagory" id="catagory" required>
+                                            <option value="" selected disabled>Select Course</option>
+                                            <option value="Web Design">Web Design</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Software Development">Software Development</option>
+                                            <option value="Python">Python</option>
+                                            <option value="SQL">SQL</option>
+                                            <option value="Wordpress">Wordpress</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <div class="maxl">
+                                            <label class="radio inline mx-4"> 
+                                                <input type="radio" name="gender" value="male"  class="form-check-input" checked>
+                                                <span> Male </span> 
+                                            </label>
+                                            <label class="radio inline"> 
+                                                <input type="radio" name="gender" value="female" class="form-check-input" >
+                                                <span>Female </span> 
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email" name="Email" value="shafinuzzaman14@gmail.com" id="email" required>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <input type="date" name="Birthday" class="form-control" placeholder="Your Birthday" id="dob" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-select" name="Payment-Stages" id="pStage" required>
+                                            <option value="" selected disabled>Select-Payment-Stages</option>
+                                            <option value="1">One-Stages</option>
+                                            <option value="2">Two-Stages</option>
+                                            <option value="3">Three-Stages</option>
+                                            <option value="4">Four-Stages</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group d-flex mt-3">
+                                        <input id="random-number1" name="ID" class="form-control w-50" required>
+                                        <span id="button" class="btn btn-primary ms-2 w-50" onclick="getElementById('random-number1').value=Math.floor(Math.random()*1000000)">ID Generate</span>
+                                    </div>
+                                    <input type="submit" class="btnRegister"  value="Register" id="register">
+                                </div>   
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Student No 2 Start Here -->
+                    <div class="tab-pane fade show" id="student2" role="tabpanel" aria-labelledby="student2-tab">
+                        <h3 class="register-heading">Student No 2</h3>
+                        <form action="https://formspree.io/f/mknlpebb" method="POST" class="needs-validation"  novalidate>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name" name="Name" id="name2" required>
+                                    </div>
+                                    <div class="form-group d-flex my-3">
+                                        <select name="c_code" id="ccode2" class="form-control w-25">
+                                            <option value="+880">+880</option>
+                                            <option value="+91">+91</option>
+                                            <option value="+62">+62</option>
+                                            <option value="+99">+99</option>
+                                        </select>
+                                        <input type="number" class="form-control ms-2" placeholder="Your Phnone" name="Phone-No" minlength="0" min="0" maxlength="10" max="9999999999" id="phnNo2" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="Payment" id="payment2" class="form-select" required>
+                                            <option value="" class="hidden" selected disabled>Select Payment</option>
+                                            <option value="15000">15000</option>
+                                            <option value="12000">12000</option>
+                                            <option value="10000">10000</option>
+                                            <option value="8000">8000</option>
+                                            <option value="6000">6000</option>
+                                            <option value="4000">4000</option>
+                                            <option value="2000">2000</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <select class="form-select" name="Catagory" id="catagory2" required>
+                                            <option value="" selected disabled>Select Course</option>
+                                            <option value="Web Design">Web Design</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Software Development">Software Development</option>
+                                            <option value="Python">Python</option>
+                                            <option value="SQL">SQL</option>
+                                            <option value="Wordpress">Wordpress</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <div class="maxl">
+                                            <label class="radio inline mx-4"> 
+                                                <input type="radio" name="gender" value="male"  class="form-check-input" checked>
+                                                <span> Male </span> 
+                                            </label>
+                                            <label class="radio inline"> 
+                                                <input type="radio" name="gender" value="female" class="form-check-input" >
+                                                <span>Female </span> 
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email" name="Email" value="mehrabmorshed66@gmail.com" id="email2" required>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <input type="date" name="Birthday" class="form-control" placeholder="Your Birthday" id="dob2" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-select" name="Payment-Stages" id="pStage2" required>
+                                            <option value="" selected disabled>Select-Payment-Stages</option>
+                                            <option value="1">One-Stages</option>
+                                            <option value="2">Two-Stages</option>
+                                            <option value="3">Three-Stages</option>
+                                            <option value="4">Four-Stages</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group d-flex mt-3">
+                                        <input id="random-number2" name="ID" class="form-control w-50" required>
+                                        <span id="button" class="btn btn-primary ms-2 w-50" onclick="getElementById('random-number2').value=Math.floor(Math.random()*1000000)">ID Generate</span>
+                                    </div>
+                                    <input type="submit" class="btnRegister"  value="Register" id="register">
+                                </div>   
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Student No 3 Start Here -->
+                    <div class="tab-pane fade show" id="student3" role="tabpanel" aria-labelledby="student3-tab">
+                        <h3 class="register-heading">Student No 3</h3>
+                        <form action="https://formspree.io/f/mvojvyrq" method="POST" class="needs-validation"  novalidate>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name" name="Name" id="name3" required>
+                                    </div>
+                                    <div class="form-group d-flex my-3">
+                                        <select name="c_code" id="ccode3" class="form-control w-25">
+                                            <option value="+880">+880</option>
+                                            <option value="+91">+91</option>
+                                            <option value="+62">+62</option>
+                                            <option value="+99">+99</option>
+                                        </select>
+                                        <input type="number" class="form-control ms-2" placeholder="Your Phnone" name="Phone-No" minlength="0" min="0" maxlength="10" max="9999999999" id="phnNo3" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="Payment" id="payment3" class="form-select" required>
+                                            <option value="" class="hidden" selected disabled>Select Payment</option>
+                                            <option value="15000">15000</option>
+                                            <option value="12000">12000</option>
+                                            <option value="10000">10000</option>
+                                            <option value="8000">8000</option>
+                                            <option value="6000">6000</option>
+                                            <option value="4000">4000</option>
+                                            <option value="2000">2000</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <select class="form-select" name="Catagory" id="catagory3" required>
+                                            <option value="" selected disabled>Select Course</option>
+                                            <option value="Web Design">Web Design</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Software Development">Software Development</option>
+                                            <option value="Python">Python</option>
+                                            <option value="SQL">SQL</option>
+                                            <option value="Wordpress">Wordpress</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <div class="maxl">
+                                            <label class="radio inline mx-4"> 
+                                                <input type="radio" name="gender" value="male"  class="form-check-input" checked>
+                                                <span> Male </span> 
+                                            </label>
+                                            <label class="radio inline"> 
+                                                <input type="radio" name="gender" value="female" class="form-check-input" >
+                                                <span>Female </span> 
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email" name="Email" value="bmdbadsha106@gmail.com" id="email3" required>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <input type="date" name="Birthday" class="form-control" placeholder="Your Birthday" id="dob3" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-select" name="Payment-Stages" id="pStage3" required>
+                                            <option value="" selected disabled>Select-Payment-Stages</option>
+                                            <option value="1">One-Stages</option>
+                                            <option value="2">Two-Stages</option>
+                                            <option value="3">Three-Stages</option>
+                                            <option value="4">Four-Stages</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group d-flex mt-3">
+                                        <input id="random-number3" name="ID" class="form-control w-50" required>
+                                        <span id="button" class="btn btn-primary ms-2 w-50" onclick="getElementById('random-number3').value=Math.floor(Math.random()*1000000)">ID Generate</span>
+                                    </div>
+                                    <input type="submit" class="btnRegister"  value="Register" id="register">
+                                </div>   
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Student No 4 Start Here -->
+                    <div class="tab-pane fade show" id="student4" role="tabpanel" aria-labelledby="student4-tab">
+                        <h3 class="register-heading">Student No 4</h3>
+                        <form action="https://formspree.io/f/mwkdwzbn" method="POST" class="needs-validation"  novalidate>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name" name="Name" id="name4" required>
+                                    </div>
+                                    <div class="form-group d-flex my-3">
+                                        <select name="c_code" id="ccode4" class="form-control w-25">
+                                            <option value="+880">+880</option>
+                                            <option value="+91">+91</option>
+                                            <option value="+62">+62</option>
+                                            <option value="+99">+99</option>
+                                        </select>
+                                        <input type="number" class="form-control ms-2" placeholder="Your Phnone" name="Phone-No" minlength="0" min="0" maxlength="10" max="9999999999" id="phnNo4" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="Payment" id="payment4" class="form-select" required>
+                                            <option value="" class="hidden" selected disabled>Select Payment</option>
+                                            <option value="15000">15000</option>
+                                            <option value="12000">12000</option>
+                                            <option value="10000">10000</option>
+                                            <option value="8000">8000</option>
+                                            <option value="6000">6000</option>
+                                            <option value="4000">4000</option>
+                                            <option value="2000">2000</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <select class="form-select" name="Catagory" id="catagory4" required>
+                                            <option value="" selected disabled>Select Course</option>
+                                            <option value="Web Design">Web Design</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Software Development">Software Development</option>
+                                            <option value="Python">Python</option>
+                                            <option value="SQL">SQL</option>
+                                            <option value="Wordpress">Wordpress</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <div class="maxl">
+                                            <label class="radio inline mx-4"> 
+                                                <input type="radio" name="gender" value="male"  class="form-check-input" checked>
+                                                <span> Male </span> 
+                                            </label>
+                                            <label class="radio inline"> 
+                                                <input type="radio" name="gender" value="female" class="form-check-input" >
+                                                <span>Female </span> 
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email" name="Email" value="md.fardin.coders04@gmail.com" id="email4" required>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <input type="date" name="Birthday" class="form-control" placeholder="Your Birthday" id="dob4" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-select" name="Payment-Stages" id="pStage4" required>
+                                            <option value="" selected disabled>Select-Payment-Stages</option>
+                                            <option value="1">One-Stages</option>
+                                            <option value="2">Two-Stages</option>
+                                            <option value="3">Three-Stages</option>
+                                            <option value="4">Four-Stages</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group d-flex mt-3">
+                                        <input id="random-number4" name="ID" class="form-control w-50" required>
+                                        <span id="button" class="btn btn-primary ms-2 w-50" onclick="getElementById('random-number4').value=Math.floor(Math.random()*1000000)">ID Generate</span>
+                                    </div>
+                                    <input type="submit" class="btnRegister"  value="Register" id="register">
+                                </div>   
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Student No 5 Start Here -->
+                    <div class="tab-pane fade show" id="student5" role="tabpanel" aria-labelledby="student5-tab">
+                        <h3 class="register-heading">Student No 5</h3>
+                        <form action="https://formspree.io/f/mrgwodky" method="POST" class="needs-validation"  novalidate>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name" name="Name" id="name5" required>
+                                    </div>
+                                    <div class="form-group d-flex my-3">
+                                        <select name="c_code" id="ccode5" class="form-control w-25">
+                                            <option value="+880">+880</option>
+                                            <option value="+91">+91</option>
+                                            <option value="+62">+62</option>
+                                            <option value="+99">+99</option>
+                                        </select>
+                                        <input type="number" class="form-control ms-2" placeholder="Your Phnone" name="Phone-No" minlength="0" min="0" maxlength="10" max="9999999999" id="phnNo5" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="Payment" id="payment5" class="form-select" required>
+                                            <option value="" class="hidden" selected disabled>Select Payment</option>
+                                            <option value="15000">15000</option>
+                                            <option value="12000">12000</option>
+                                            <option value="10000">10000</option>
+                                            <option value="8000">8000</option>
+                                            <option value="6000">6000</option>
+                                            <option value="4000">4000</option>
+                                            <option value="2000">2000</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <select class="form-select" name="Catagory" id="catagory5" required>
+                                            <option value="" selected disabled>Select Course</option>
+                                            <option value="Web Design">Web Design</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Software Development">Software Development</option>
+                                            <option value="Python">Python</option>
+                                            <option value="SQL">SQL</option>
+                                            <option value="Wordpress">Wordpress</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <div class="maxl">
+                                            <label class="radio inline mx-4"> 
+                                                <input type="radio" name="gender" value="male"  class="form-check-input" checked>
+                                                <span> Male </span> 
+                                            </label>
+                                            <label class="radio inline"> 
+                                                <input type="radio" name="gender" value="female" class="form-check-input" >
+                                                <span>Female </span> 
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email" name="Email" value="rimonsikder706@gmail.com" id="email5" required>
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <input type="date" name="Birthday" class="form-control" placeholder="Your Birthday" id="dob5" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-select" name="Payment-Stages" id="pStage5" required>
+                                            <option value="" selected disabled>Select-Payment-Stages</option>
+                                            <option value="1">One-Stages</option>
+                                            <option value="2">Two-Stages</option>
+                                            <option value="3">Three-Stages</option>
+                                            <option value="4">Four-Stages</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group d-flex mt-3">
+                                        <input id="random-number5" name="ID" class="form-control w-50" required>
+                                        <span id="button" class="btn btn-primary ms-2 w-50" onclick="getElementById('random-number5').value=Math.floor(Math.random()*1000000)">ID Generate</span>
+                                    </div>
+                                    <input type="submit" class="btnRegister"  value="Register" id="register">
+                                </div>   
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Custom Js -->
+    <script src="./main.js"></script>
+</body>
+</html>
